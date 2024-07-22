@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="ck.js"></script>
+    <script src="cart.js"></script>
+    <title>Ecommerce BTS x CK</title>
+
+    
+    
+</head>
+<body>
+    <nav>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>
+        
+        <ul>
+            <li><a href="#">CK</a></li>
+            <li><a id="blazer-link" href="cart.html">CART</a></li>
+            <li><a href="#">MERCH</a></li>
+            <li><a href="#">CONTACT US</a></li><br><br><br>
+            <li><a href="#">SEASONAL OFFERS!!</a></li>
+        </ul>
+    </nav>
+
+    <div class="section">
+        <div class="division1">
+            <h1>JK X CK COLLECTION</h1>
+            <div class="ck7">
+            <img src="images/ck7.jpg" alt="CK Jacket" width="600">
+            <img src="images/ck9.jpeg" alt="CK Jacket" width="600">
+            </div>
+        </div>
+        <div class="division2">
+            <div class="info-container">
+                <div class="info-item">
+                    <img id="div2" src="images/logo1.jpg" alt="Shipping" style="padding: 0.8pc;">
+                    <p>Free worldwide shipping on all orders</p>
+                </div>
+                <div class="info-item">
+                    <img id="div2" src="images/lgo3.jpg" alt="Return Policy" style="padding: 1.2pc;">
+                    <p>Easy Return Policy and Refund Policy</p>
+                </div>
+                <div class="info-item">
+                    <img id="div2" src="images/logo2.jpg" alt="Gift Cards"    style="padding: 0.6pc";>
+                    <p>Buy Gift Cards and use Coupon codes easily</p>
+                </div>
+                <div class="info-item">
+                    <img id="div2" src="images/logo4.jpg" alt="Contact Us" style="padding: -10px;">
+                    <p>Contact Us via Mail and support system</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="division3">
+            <div class="product-details">
+                <img id="ck5details" src="images/ck5.jpeg" alt="CK Jacket" width="200" >
+                <div class="details">
+                    <h2>CALVIN K JACKET</h2>
+                    <p class="price">$99.99</p>
+                    <div class="size-buttons">
+                        <button class="size-button">Size :</button>
+                        <button class="size-button">S</button>
+                        <button class="size-button">M</button>
+                        <button class="size-button">L</button>
+                        <button class="size-button">XL</button>
+                    </div><br>
+                    <button id="buy-button" class="buy-button" onclick="addItemToCart('CALVIN K JACKET', 99.99)">Buy Now</button>
+                </div>
+                <img id="ck5details" src="images/ck5.jpeg" alt="CK Jacket" width="200" >
+            </div>
+        </div>
+        <!-- pop up form -->
+        <div class="form-container" id="form-container">
+            <!-- <h2>Personal Information</h2> -->
+            <form class="formm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required><br>
+    
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required><br><br>
+    
+                <!-- <h2>Card Information</h2> -->
+                <label for="card-type">Card Type:</label>
+                <select id="card-type" name="card-type">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                </select><br>
+    
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required><br>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <script>
+            // JavaScript to show the form when the "Buy Now" button is clicked
+            document.getElementById("buy-button").addEventListener("click", function () {
+                document.getElementById("form-container").style.display = "block";
+            });
+        </script>
+
+        <div class="division4">
+            <h2>BTS Wearing CK</h2>
+            <div class="product-cards">
+                <div class="product-card">
+                    <img src="images/ck1.jpg" alt="BTS wearing CK">
+                    <h3>CK TEE</h3>
+                    <p class="price">$19.99</p>
+                    <button id="buy-button" class="buy-button" onclick="addItemToCart('CK TEE', 19.99)">Add to cart</button>
+                    <button id="buyy" >Buy Now</button>
+                </div>
+    
+                <div class="product-card">
+                    <img src="images/ck2.jpeg" alt="BTS wearing CK">
+                    <h3>DEMIN BLACK JACKET-MEN</h3>
+                    <p class="price">$24.99</p>
+                    <button id="buy-button" class="buy-button" onclick="addItemToCart('DEMIN BLACK JACKET-MEN', 24.99)">Add to cart</button>
+                    <button id="buyy" >Buy Now</button>
+                </div>
+    
+                <div class="product-card">
+                    <img src="images/pd5.jpg" alt="BTS wearing CK">
+                    <h3>WHITE JACKET</h3>
+                    <p class="price">$29.99</p>
+                    <button id="buy-button" class="buy-button" onclick="addItemToCart('WHITE JACKET', 29.99)">Add to cart</button>
+                    <button id="buyy" >Buy Now</button>
+                </div>
+    
+                <div class="product-card">
+                    <img src="images/pd9.jpg" alt="BTS wearing CK">
+                    <h3>BLACK TEE PLAIN</h3>
+                    <p class="price">$34.99</p>
+                    <button id="buy-button" class="buy-button" onclick="addItemToCart('BLACK TEE PLAIN', 34.99)">Add to cart</button>
+                    <button id="buyy" >Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/pd1.jpg" alt="BTS wearing CK">
+                    <h3>JACKET BLACK</h3>
+                    <p class="price">$34.99</p>
+                    <button id="buy-button" class="buy-button" onclick="addItemToCart('JACKET BLACK', 34.99)">Add to cart</button>
+                    <button id="buyy" >Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/pd4.jpg" alt="BTS wearing CK">
+                    <h3>WHITE TEE</h3>
+                    <p class="price">$34.99</p>
+                    <button id="buy-button" class="buy-button" onclick="addItemToCart('WHITE TEE', 34.99)">Add to cart</button>
+                    <button id="buyy" >Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/ck5.jpeg" alt="BTS wearing CK">
+                    <h3>LIGHT-BLUE JACKET</h3>
+                    <p class="price">$34.99</p>
+                    <button  id="buy-button" class="buy-button" onclick="addItemToCart('LIGHT-BLUE JACKET', 34.99)">Add to cart</button>
+                    <button id="buyy" >Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/pd6.jpg" alt="BTS wearing CK">
+                    <h3>DENIM-JACKET</h3>
+                    <p class="price">$34.99</p>
+                    <button  id="buy-button" class="buy-button" onclick="addItemToCart('DENIM-JACKET', 34.99)">Add to cart</button>
+                    <button id="buyy" >Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/pd11.jpg" alt="BTS wearing CK">
+                    <h3>TANK-TOP</h3>
+                    <p class="price">$34.99</p>
+                    <button  id="buy-button" class="buy-button" onclick="addItemToCart('TANK-TOP', 34.99)">Add to cart</button>
+                    <button id="buyy" >Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/ck4.jpg" alt="BTS wearing CK">
+                    <h3>CLASSY JACKET</h3>
+                    <p class="price">$34.99</p>
+                    <button id="buy-button" class="buy-button" onclick="addItemToCart('CLASSY JACKET', 34.99)">Add to cart</button>
+                    <button id="buyy" >Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/pd15.jpg" alt="BTS wearing CK">
+                    <h3>BOOTS</h3>
+                    <p class="price">$34.99</p>
+                    <button id="buy-button" class="buy-button" onclick="addItemToCart('BOOTS', 34.99)">Add to cart</button>
+                    <button id="buyy" >Buy Now</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/pd12.jpg" alt="BTS wearing CK">
+                    <h3>JUMPER</h3>
+                    <p class="price">$34.99</p>
+                    <button id="buy-button" class="buy-button" onclick="addItemToCart('JUMPER', 34.99)">Add to cart</button>
+                    <button id="buyy" >Buy Now</button>
+                </div>
+            </div>
+       
+  
+        <div class="division5">
+            <div class="ending">
+                <img id="pd13details" src="images/pd13.jpg" alt="CK Shoe" width="200" >
+                <div class="details">
+                    <h2>WINTER NEW ARRIVALS</h2>
+                    <h2>NEW SEASON<h2>
+                        <h2>NEW COLLECTION</h2>
+                    
+                    <button id="buy-button" class="buy-button">Choose your style</button>
+                </div>
+                <img id="pd17details" src="images/pd17.jpg" alt="CK Jacket" width="200" >
+            </div>
+        </div>
+        
+        <div class="division6">
+            <div class="sectionwhole">
+            <div class="section-title">About Us</div>
+            <div class="det">
+                <p>Company</p>
+                <p>Contact</p>
+                <p>Careers</p>
+            </div>
+            </div>
+            
+            <div class="sectionwhole">
+            <div class="section-title">Useful Links</div>
+            <div class="det">
+                <p>Support</p>
+                <p>Refund</p>
+                <p>Feedback</p>
+            </div>
+            </div>
+            
+            <div class="sectionwhole">
+            <div class="section-title">Products</div>
+            <div class="det">
+                <p>Blazers</p>
+                <p>Shoes</p>
+                <p>many more</p>
+            </div>
+            </div>
+    
+            <div class="sectionwhole">
+            <div class="section-title">Follow Us</div>
+            <div class="social-icons">
+                <img src="images/instagram-logo.jpg" alt="Instagram" width="30">
+                <img src="images/whatsapp-logo.jpg" alt="WhatsApp" width="30">
+                <img src="images/email-logo.jpg" alt="Email" width="30">
+            </div>
+            </div>
+        </div>
+    
+
+
+
+
+      
+
+   
+</body>
+</html>

@@ -1,0 +1,433 @@
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.division1 {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    height: 800px;
+    border: 1px solid #ccc;
+    background-color: #e4dcdc;
+}
+.division2 {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.division3 {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.division4 {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bts-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bts-images img {
+    margin: 10px;
+    max-width: 30%;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #f6a6a6;
+    position: relative; /* Add this line */
+}
+
+a:hover::after { /* Add this block */
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.division {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bts-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bts-images img {
+    margin: 10px;
+    max-width: 30%;
+}
+
+/*  */
+.info-container {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-item {
+    text-align: center;
+    flex: 1;
+}
+
+.info-item img {
+    max-width: 100px;
+}
+
+.info-item:hover {
+    transform: scale(1.5);
+}
+
+/*  */
+
+.division3 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+#ck5details {
+    /* Full-length height of division3 */
+    width: 28%; /* 40% of the width of division3 */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.details {
+    flex: 1;
+    padding: 70px; /* Add padding for spacing */
+}
+
+.details h2 {
+    font-weight: bold;
+    font-size: 39px;
+}
+
+.details .price {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.size-buttons {
+    display: flex;
+    margin-left: 120px;
+}
+
+.size-button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.size-button:hover {
+    background-color: #797a7b; /* Change the background color on hover */
+}
+
+.buy-button {
+    background-color: black;
+    color: rgb(9, 174, 174);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #e8e6e6; /* Change the background color on hover */
+}
+
+#buyy {
+    background-color: #3b8d04; /* Bluish-green background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#buyy:hover {
+    background-color: black; /* Darker bluish-green on hover */
+}
+
+
+.form-container {
+    display: none;
+    background-color: #fff;
+    position: relative;
+    padding: 260px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0;
+}
+
+.form-container input, .form-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.form-container button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.formm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* div 4 */
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display 4 cards in a row */
+    gap: 10px; /* Add spacing between cards */
+}
+
+.product-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff6600;
+}
+
+/* div 5 */
+.division5 {
+    text-align: center;
+    background-color: #080808;
+    color: #fff;
+}
+
+.ending {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pd13details,
+#pd17details {
+    width: 200px;
+}
+
+#pd13details {
+    /* Full-length height of division3 */
+    width: 27%; /* 40% of the width of division3 */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+#pd17details {
+    /* Full-length height of division3 */
+    width: 32%; /* 40% of the width of division3 */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+/* div 6 */
+.division6 {
+    background-color: #f3f3f3; /* Light background */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sectionwhole {
+    width: calc(25% - 20px); /* 4 sections side by side with spacing */
+    margin: 10px;
+    text-align: center;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+.det{
+    flex-direction: row;
+}
+
+.social-icons {
+    display: flex;
+    padding-left: 150px;
+    margin-top: 20px;
+}
+
+.social-icons img{
+    margin: 1px 0;
+}
+
+/* Styling for the search bar container */
+.search-bar {
+    background-color: #333; /* Light background color */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the search input field */
+#search-input {
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    width: 350px; /* Adjust the width as needed */
+}
+
+/* Styling for the search button */
+#search-button {
+    background-color: #ff5733; /* Change the button color to a different color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #cc4722; /* Change the button color on hover */
+}
+
+
